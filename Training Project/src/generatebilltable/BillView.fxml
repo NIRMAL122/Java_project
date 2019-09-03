@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="1000.0" minWidth="900.0" style="-fx-background-image: url(&quot;file:///F:/study/eclipsepro/Training%20Project/src/generatebilltable/milk-wallpapers.jpg&quot;);" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="generatebilltable.BillViewController">
+   <children>
+      <Label layoutX="363.0" layoutY="14.0" text="Bill Log">
+         <font>
+            <Font name="Rockwell Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="99.0" text="Month">
+         <font>
+            <Font name="Nirmala UI Bold" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combomonth" layoutX="147.0" layoutY="101.0" prefHeight="35.0" prefWidth="151.0" />
+      <Label layoutX="373.0" layoutY="101.0" text="Year">
+         <font>
+            <Font name="Nirmala UI Bold" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboyear" layoutX="468.0" layoutY="103.0" prefHeight="35.0" prefWidth="151.0" />
+      <Button layoutX="721.0" layoutY="105.0" mnemonicParsing="false" onAction="#domonyrfind" prefHeight="35.0" prefWidth="87.0" text="Find">
+         <font>
+            <Font name="Nirmala UI Bold" size="18.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="paid" layoutX="220.0" layoutY="186.0" mnemonicParsing="false" text="Paid">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="payment" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="pending" layoutX="360.0" layoutY="186.0" mnemonicParsing="false" text="Pending" toggleGroup="$payment">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="562.0" layoutY="186.0" mnemonicParsing="false" onAction="#dopayfind" prefHeight="35.0" prefWidth="87.0" text="Find">
+         <font>
+            <Font name="Nirmala UI Bold" size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="34.0" layoutY="391.0" prefHeight="471.0" prefWidth="848.0" />
+      <Separator layoutY="69.0" prefHeight="13.0" prefWidth="900.0" />
+      <Separator layoutX="5.0" layoutY="158.0" prefHeight="13.0" prefWidth="900.0" />
+      <Separator layoutX="8.0" layoutY="241.0" prefHeight="13.0" prefWidth="900.0" />
+      <Label layoutX="132.0" layoutY="271.0" text="Mobile No.">
+         <font>
+            <Font name="Nirmala UI Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtmobile" layoutX="284.0" layoutY="271.0" prefHeight="39.0" prefWidth="248.0" />
+      <Button layoutX="563.0" layoutY="269.0" mnemonicParsing="false" onAction="#domobilesrch" prefHeight="39.0" prefWidth="174.0" text="Fetch Bill History">
+         <font>
+            <Font name="Nirmala UI Bold" size="18.0" />
+         </font>
+      </Button>
+      <Separator layoutX="9.0" layoutY="340.0" prefHeight="13.0" prefWidth="900.0" />
+      <Button layoutX="550.0" layoutY="879.0" mnemonicParsing="false" onAction="#doexport" prefHeight="50.0" prefWidth="179.0" style="-fx-background-radius: 100;" text="Export to Excel">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Label layoutX="482.0" layoutY="886.0" text="Print">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblinfo" layoutX="570.0" layoutY="940.0" prefHeight="50.0" prefWidth="320.0" textFill="#fc0d0d">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

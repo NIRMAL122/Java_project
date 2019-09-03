@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="1000.0" minWidth="900.0" style="-fx-background-image: url(&quot;file:///F:/study/eclipsepro/Training%20Project/src/generatebill/milk-wallpapers.jpg&quot;);" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="generatebill.GenerateBillViewController">
+   <children>
+      <Label layoutX="329.0" layoutY="38.0" text="Generate Bill">
+         <font>
+            <Font name="Segoe UI Bold" size="40.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listmobile" layoutX="44.0" layoutY="199.0" onMouseClicked="#doselect" prefHeight="568.0" prefWidth="166.0" />
+      <ListView fx:id="listname" layoutX="214.0" layoutY="199.0" onMouseClicked="#doselectname" prefHeight="568.0" prefWidth="200.0" />
+      <Label layoutX="81.0" layoutY="166.0" text="Mobile No.">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="251.0" layoutY="166.0" text="Name">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="476.0" layoutY="295.0" text="Month">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="476.0" layoutY="363.0" text="Last Date">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="489.0" layoutY="227.0" text="Year">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtldate" layoutX="571.0" layoutY="354.0" prefHeight="48.0" prefWidth="124.0" />
+      <ComboBox fx:id="combomonth" layoutX="571.0" layoutY="286.0" onAction="#showmonth" prefHeight="48.0" prefWidth="124.0" />
+      <ComboBox fx:id="comboyear" layoutX="573.0" layoutY="216.0" onAction="#showyear" prefHeight="48.0" prefWidth="124.0" />
+      <Button layoutX="531.0" layoutY="444.0" mnemonicParsing="false" onAction="#dogenerate" text="Generate Bill">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Label layoutX="613.0" layoutY="557.0" text="Cow">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="706.0" layoutY="557.0" text="Buffalo">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="474.0" layoutY="605.0" text="Rate">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="474.0" layoutY="654.0" text="Quantity">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="474.0" layoutY="709.0" text="Bill">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblcr" layoutX="574.0" layoutY="599.0" prefHeight="41.0" prefWidth="105.0">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="561.0" layoutY="544.0" orientation="VERTICAL" prefHeight="210.0" prefWidth="20.0" />
+      <Separator layoutX="677.0" layoutY="544.0" orientation="VERTICAL" prefHeight="210.0" prefWidth="20.0" />
+      <Separator layoutX="790.0" layoutY="545.0" orientation="VERTICAL" prefHeight="210.0" prefWidth="20.0" />
+      <Separator layoutX="450.0" layoutY="595.0" orientation="VERTICAL" prefHeight="159.0" prefWidth="20.0" />
+      <Separator layoutX="457.0" layoutY="580.0" prefHeight="30.0" prefWidth="343.0" />
+      <Separator layoutX="457.0" layoutY="629.0" prefHeight="30.0" prefWidth="343.0" />
+      <Separator layoutX="457.0" layoutY="682.0" prefHeight="30.0" prefWidth="343.0" />
+      <Separator layoutX="457.0" layoutY="739.0" prefHeight="30.0" prefWidth="343.0" />
+      <Separator layoutX="569.0" layoutY="530.0" prefHeight="30.0" prefWidth="231.0" />
+      <Label fx:id="lblbr" layoutX="688.0" layoutY="599.0" prefHeight="41.0" prefWidth="105.0">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblcq" layoutX="574.0" layoutY="649.0" prefHeight="41.0" prefWidth="105.0">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblbq" layoutX="688.0" layoutY="649.0" prefHeight="41.0" prefWidth="105.0">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblcbill" layoutX="574.0" layoutY="704.0" prefHeight="41.0" prefWidth="105.0">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblbbill" layoutX="688.0" layoutY="704.0" prefHeight="41.0" prefWidth="105.0">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtmobile" layoutX="163.0" layoutY="872.0" prefHeight="50.0" prefWidth="278.0" promptText="MobileNumber....." />
+      <TextField fx:id="txttotbill" layoutX="466.0" layoutY="872.0" prefHeight="50.0" prefWidth="189.0" promptText="Total Bill...." />
+      <ImageView fx:id="sendmsg" fitHeight="50.0" fitWidth="64.0" layoutX="675.0" layoutY="870.0" onMouseClicked="#dosend" onMouseEntered="#dozoomout" onMouseExited="#dozoomin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@send-512.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.02" contrast="0.2" />
+         </effect>
+      </ImageView>
+      <Label fx:id="lblinfo" layoutX="740.0" layoutY="910.0" prefHeight="30.0" prefWidth="114.0" textFill="#ff1111">
+         <font>
+            <Font name="Segoe UI Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="800.0" minWidth="900.0" style="-fx-background-image: url(&quot;file:///F:/study/eclipsepro/Training%20Project/src/dashboard/123.jpg&quot;);" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.DashboardViewController">
+   <children>
+      <ImageView fx:id="addcustomer" fitHeight="150.0" fitWidth="200.0" layoutX="114.0" layoutY="129.0" onMouseClicked="#doaddcustomer" onMouseEntered="#dozoomout" onMouseExited="#dozoomin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@add-include-approve-account-user-customer-profile-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="routinelog" fitHeight="150.0" fitWidth="200.0" layoutX="365.0" layoutY="129.0" onMouseClicked="#doroutinelog" onMouseEntered="#dozoomout1" onMouseExited="#dozoomin1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@3-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="generatebill" fitHeight="150.0" fitWidth="200.0" layoutX="618.0" layoutY="123.0" onMouseClicked="#dogeneratebill" onMouseEntered="#dozoomout2" onMouseExited="#dozoomin2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@invoice-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="customertable" fitHeight="150.0" fitWidth="200.0" layoutX="375.0" layoutY="351.0" onMouseClicked="#docustomertable" onMouseEntered="#dozoomout3" onMouseExited="#dozoomin3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@clipboard.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Paymentlog" fitHeight="150.0" fitWidth="200.0" layoutX="639.0" layoutY="340.0" onMouseClicked="#dopaymentlog" onMouseEntered="#dozoomout4" onMouseExited="#dozoomin4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Paid-Search-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="about" fitHeight="150.0" fitWidth="200.0" layoutX="512.0" layoutY="555.0" onMouseClicked="#doabout" onMouseEntered="#dozoomout5" onMouseExited="#dozoomin5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@133-512.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="104.0" layoutY="291.0" text="Add Customer">
+         <font>
+            <Font name="Segoe UI Black" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="369.0" layoutY="291.0" text="Routine Log">
+         <font>
+            <Font name="Segoe UI Black" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="629.0" layoutY="291.0" text="Generate Bill">
+         <font>
+            <Font name="Segoe UI Black" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="370.0" layoutY="508.0" text="Customer Table">
+         <font>
+            <Font name="Segoe UI Black" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="639.0" layoutY="500.0" text="Payment Log">
+         <font>
+            <Font name="Segoe UI Black" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="512.0" layoutY="716.0" text="About Developer">
+         <font>
+            <Font name="Segoe UI Black" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="checkvariations" fitHeight="150.0" fitWidth="200.0" layoutX="264.0" layoutY="553.0" onMouseClicked="#dovariations" onMouseEntered="#dozoomout7" onMouseExited="#dozoomin7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cheque-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="billcollector" fitHeight="150.0" fitWidth="200.0" layoutX="125.0" layoutY="340.0" onMouseClicked="#docollectbill" onMouseEntered="#dozoomout6" onMouseExited="#dozoomin6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Credit_card-512.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="120.0" layoutY="500.0" text="Bill Collector">
+         <font>
+            <Font name="Segoe UI Black" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="237.0" layoutY="716.0" text="Check  Variations">
+         <font>
+            <Font name="Segoe UI Black" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="music" fitHeight="55.0" fitWidth="55.0" layoutX="764.0" layoutY="745.0" onMouseClicked="#domusic" onMouseEntered="#dozoomout8" onMouseExited="#dozoomin8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Play_Circle_Filled-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="music1" fitHeight="55.0" fitWidth="55.0" layoutX="832.0" layoutY="745.0" onMouseClicked="#dostop" onMouseEntered="#dozoomout9" onMouseExited="#dozoomin9" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pause-512.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

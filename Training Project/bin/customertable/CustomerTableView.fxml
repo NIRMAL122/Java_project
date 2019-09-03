@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="900.0" minWidth="900.0" style="-fx-background-image: url(&quot;file:///F:/study/eclipsepro/Training%20Project/src/customertable/milk-wallpapers.jpg&quot;);" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customertable.CustomerTableViewController">
+   <children>
+      <Label layoutX="281.0" layoutY="13.0" prefHeight="49.0" prefWidth="315.0" text="Customer Finder">
+         <font>
+            <Font name="Ebrima Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="98.0" prefHeight="40.0" prefWidth="64.0" text="Area">
+         <font>
+            <Font name="Nirmala UI Bold" size="27.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboarea" layoutX="150.0" layoutY="98.0" prefHeight="40.0" prefWidth="215.0" />
+      <Button layoutX="411.0" layoutY="98.0" mnemonicParsing="false" onAction="#doareafetch" prefHeight="40.0" prefWidth="95.0" text="Fetch">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn" layoutX="703.0" layoutY="103.0" mnemonicParsing="false" onAction="#dofetchall" onMouseEntered="#dozoomout" onMouseExited="#dozoomin" prefHeight="40.0" prefWidth="142.0" text="Fetch All">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Label layoutX="67.0" layoutY="168.0" prefHeight="40.0" prefWidth="76.0" text="Name">
+         <font>
+            <Font name="Nirmala UI Bold" size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtname" layoutX="159.0" layoutY="169.0" prefHeight="40.0" prefWidth="215.0" />
+      <Button layoutX="411.0" layoutY="168.0" mnemonicParsing="false" onAction="#donamesrch" prefHeight="40.0" prefWidth="95.0" text="Search">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Separator layoutX="2.0" layoutY="62.0" prefHeight="22.0" prefWidth="894.0" />
+      <Separator layoutX="4.0" layoutY="146.0" prefHeight="22.0" prefWidth="894.0" />
+      <Separator layoutX="2.0" layoutY="216.0" prefHeight="22.0" prefWidth="894.0" />
+      <TableView fx:id="table" layoutX="32.0" layoutY="270.0" prefHeight="446.0" prefWidth="838.0" />
+      <Button layoutX="562.0" layoutY="740.0" mnemonicParsing="false" onAction="#doexport" prefHeight="50.0" prefWidth="179.0" style="-fx-background-radius: 100;" text="Export to Excel">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Label layoutX="493.0" layoutY="748.0" text="Print">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblinfo" layoutX="564.0" layoutY="811.0" prefHeight="50.0" prefWidth="320.0" textFill="#fc0d0d">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

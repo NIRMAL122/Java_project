@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="1000.0" minWidth="900.0" style="-fx-background-image: url(&quot;file:///F:/study/eclipsepro/Training%20Project/src/projectpackage/milk-wallpapers.jpg&quot;);" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.102" fx:controller="routinelogpackage.RoutineLogViewController">
+   <children>
+      <Label layoutX="318.0" layoutY="36.0" prefHeight="58.0" prefWidth="346.0" text="Routine Log">
+         <font>
+            <Font name="Segoe UI Black" size="40.0" />
+         </font>
+      </Label>
+      <ListView fx:id="txtname" layoutX="43.0" layoutY="177.0" onMouseClicked="#doshow" prefHeight="635.0" prefWidth="177.0" />
+      <ListView fx:id="txtaddress" layoutX="240.0" layoutY="178.0" onMouseClicked="#doshowadd" prefHeight="635.0" prefWidth="251.0" />
+      <Label layoutX="600.0" layoutY="303.0" text="Default Quantities">
+         <font>
+            <Font name="Nirmala UI Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="531.0" layoutY="373.0" text="Cow Milk Quantity">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="531.0" layoutY="441.0" text="Bufalo Milk Quantity">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtcq" editable="false" layoutX="737.0" layoutY="365.0" prefHeight="44.0" prefWidth="107.0" />
+      <TextField fx:id="txtbq" editable="false" layoutX="737.0" layoutY="435.0" prefHeight="44.0" prefWidth="107.0" />
+      <Label layoutX="531.0" layoutY="532.0" text="Mobile No.">
+         <font>
+            <Font name="Nirmala UI Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtmobile" editable="false" layoutX="651.0" layoutY="525.0" prefHeight="44.0" prefWidth="207.0" />
+      <Label layoutX="651.0" layoutY="623.0" text="Fill Values">
+         <font>
+            <Font name="Nirmala UI Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="533.0" layoutY="693.0" text="Cow Milk Quantity">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="533.0" layoutY="761.0" text="Bufalo Milk Quantity">
+         <font>
+            <Font name="Nirmala UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtcmq" layoutX="739.0" layoutY="685.0" prefHeight="44.0" prefWidth="107.0" />
+      <TextField fx:id="txtbmq" layoutX="739.0" layoutY="755.0" prefHeight="44.0" prefWidth="107.0" />
+      <CheckBox fx:id="chkskip" layoutX="558.0" layoutY="831.0" mnemonicParsing="false" onAction="#doskip" text="Skipped">
+         <font>
+            <Font name="Nirmala UI Bold" size="19.0" />
+         </font>
+      </CheckBox>
+      <Button layoutX="57.0" layoutY="858.0" mnemonicParsing="false" onAction="#dodeleteothers" prefHeight="58.0" prefWidth="153.0" text="Delete Others">
+         <font>
+            <Font name="Microsoft YaHei Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="644.0" layoutY="901.0" mnemonicParsing="false" onAction="#doinsert" prefHeight="58.0" prefWidth="141.0" text="Insert">
+         <font>
+            <Font name="Nirmala UI Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="89.0" layoutY="140.0" text="Name">
+         <font>
+            <Font name="Nirmala UI" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="318.0" layoutY="140.0" text="Address">
+         <font>
+            <Font name="Nirmala UI" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutY="108.0" prefHeight="20.0" prefWidth="900.0" />
+      <Separator layoutX="501.0" layoutY="118.0" orientation="VERTICAL" prefHeight="883.0" prefWidth="19.0" />
+      <Separator layoutX="512.0" layoutY="596.0" prefHeight="20.0" prefWidth="387.0" />
+      <Separator layoutX="512.0" layoutY="262.0" prefHeight="20.0" prefWidth="387.0" />
+      <DatePicker fx:id="datepick" layoutX="557.0" layoutY="163.0" prefHeight="51.0" prefWidth="293.0" promptText="enter date. ....." />
+      <Button layoutX="286.0" layoutY="858.0" mnemonicParsing="false" onAction="#doload" prefHeight="58.0" prefWidth="153.0" text="Load Data....">
+         <font>
+            <Font name="Microsoft YaHei Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

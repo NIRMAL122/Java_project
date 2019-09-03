@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="675.0" minWidth="900.0" style="-fx-background-image: url(&quot;file:///F:/study/eclipsepro/Training%20Project/src/aboutdeveloper/developer-background-609.jpg&quot;);" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.102" fx:controller="aboutdeveloper.AboutViewController">
+   <children>
+      <Label layoutX="262.0" layoutY="14.0" text="About Developer" textFill="#fffcfc">
+         <font>
+            <Font name="Bookman Old Style Bold" size="51.0" />
+         </font>
+      </Label>
+      <Label layoutX="414.0" layoutY="144.0" text="Nirmal Singh" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="468.0" layoutY="207.0" prefHeight="45.0" prefWidth="304.0" text="(GZSCCET,Bathinda)" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="315.0" prefHeight="45.0" prefWidth="382.0" text="under the Guidance of: " textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="414.0" layoutY="387.0" text="Rajesh Kumar Bansal" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="334.0" layoutY="448.0" prefHeight="45.0" prefWidth="526.0" text="(Sun Certified java Programmer)" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="334.0" layoutY="493.0" prefHeight="45.0" prefWidth="526.0" text="(Training head at Sun-Soft" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="435.0" layoutY="522.0" prefHeight="45.0" prefWidth="526.0" text="Technologies(SST),Bathinda)" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="30.0" />
+         </font>
+      </Label>
+      <Separator layoutY="325.0" prefHeight="26.0" prefWidth="310.0" />
+      <Separator layoutX="678.0" layoutY="325.0" prefHeight="26.0" prefWidth="276.0" />
+      <Separator layoutY="85.0" prefHeight="26.0" prefWidth="961.0" />
+      <ImageView fitHeight="221.0" fitWidth="242.0" layoutX="55.0" layoutY="379.0" opacity="0.86" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@itsme.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.1" contrast="0.15" hue="0.15" saturation="-0.3">
+               <input>
+                  <Blend mode="MULTIPLY" opacity="0.3" />
+               </input>
+            </ColorAdjust>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="129.0" fitWidth="223.0" layoutX="55.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hackers1.jpg" />
+         </image>
+      </ImageView>
+      <Hyperlink layoutX="687.0" layoutY="580.0" onAction="#dovisit" prefHeight="41.0" prefWidth="151.0" text=" Visit Website" textFill="WHITE" underline="true">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>
